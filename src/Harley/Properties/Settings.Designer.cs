@@ -25,7 +25,7 @@ namespace Harley.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://zombo.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://github.com/eVisionSoftware/Harley")]
         public string Address {
             get {
                 return ((string)(this["Address"]));
