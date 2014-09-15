@@ -4,9 +4,6 @@
     using CefSharp;
     using CefSharp.Wpf;
 
-    /// <summary>
-    ///     Interaction logic for UserControl1.xaml
-    /// </summary>
     public partial class EmbeddedBrowser
     {
         private readonly WebView _webView;
