@@ -12,13 +12,7 @@
         {
             InitializeComponent();
 
-            var browserSettings = new BrowserSettings
-            {
-                ApplicationCacheDisabled = true,
-                PageCacheDisabled = true,
-                DatabasesDisabled = true,
-            };
-            _webView = new WebView("about:blank", browserSettings);
+            _webView = new WebView();
             DockPanel.Children.Add(_webView);
         }
 
@@ -30,8 +24,11 @@
 
         public static void Init()
         {
-            var settings = new Settings();
-            if(CEF.Initialize(settings))
+            var settings = new CefSettings
+            {
+                BrowserSubprocessPath = "CefSharp.BrowserSubprocess.exe"
+            };
+            if(Cef.Initialize(settings))
             {
                 // Plug in custom scheme handler here.
                 //CEF.RegisterScheme("http", ...)
@@ -42,7 +39,7 @@
         {
             if (e.Key == Key.F5)
             {
-                _webView.Reload(true);
+                _webView.Reload();
                 return;
             }
             if (e.Key == Key.F12)
