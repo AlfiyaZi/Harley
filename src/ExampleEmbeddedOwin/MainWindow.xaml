@@ -1,0 +1,10 @@
+﻿<Window x:Class="ExampleEmbeddedOwin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui1="clr-namespace:Harley.UI;assembly=Harley.UI"
+        Title="Harley Desktop" 
+        WindowStartupLocation="CenterScreen" Height="600" Width="800">
+    <Grid>
+        <ui1:EmbeddedBrowser x:Name="Browser"/>
+    </Grid>
+</Window>

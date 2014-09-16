@@ -1,5 +1,6 @@
 ﻿namespace Harley.UI
 {
+    using System.Collections.Generic;
     using System.Windows.Input;
     using CefSharp;
     using CefSharp.Wpf;
@@ -22,17 +23,20 @@
             set { _webView.Address = value; }
         }
 
-        public static void Init()
+        public static void Init(IEnumerable<CefCustomScheme> customSchemes = null)
         {
             var settings = new CefSettings
             {
-                BrowserSubprocessPath = "CefSharp.BrowserSubprocess.exe"
+                BrowserSubprocessPath = "CefSharp.BrowserSubprocess.exe",
             };
-            if(Cef.Initialize(settings))
+            if(customSchemes != null)
             {
-                // Plug in custom scheme handler here.
-                //CEF.RegisterScheme("http", ...)
+                foreach(var scheme in customSchemes)
+                {
+                    settings.RegisterScheme(scheme);
+                }
             }
+            Cef.Initialize(settings);
         }
 
         private void EmbeddedOwinBrowser_OnKeyDown(object sender, KeyEventArgs e)
