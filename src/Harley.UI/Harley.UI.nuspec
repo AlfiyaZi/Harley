@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Harley.UI</id>
+        <version>0.1</version>
+        <title>Harley.UI</title>
+        <authors>Damian Hickey</authors>
+        <owners>eVision Industy Software B,V</owners>
+        <projectUrl>https://github.com/eVisionSoftware/Harley</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>UI component of Harley</description>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework4.0" />
+            <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework4.0" />
+            <frameworkAssembly assemblyName="System.Xaml" targetFramework=".NETFramework4.0" />
+            <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.0" />
+        </frameworkAssemblies>
+    </metadata>
+    <files>
+        <file src="bin\x86\Release\locales\en-US.pak" target="content\locales\en-US.pak" />
+        <file src="bin\x86\Release\CefSharp.BrowserSubprocess.exe" target="content\CefSharp.BrowserSubprocess.exe" />
+        <file src="bin\x86\Release\d3dcompiler_43.dll" target="content\d3dcompiler_43.dll" />
+        <file src="bin\x86\Release\d3dcompiler_46.dll" target="content\d3dcompiler_46.dll" />
+        <file src="bin\x86\Release\ffmpegsumo.dll" target="content\ffmpegsumo.dll" />
+        <file src="bin\x86\Release\icudt.dll" target="content\icudt.dll" />
+        <file src="bin\x86\Release\libcef.dll" target="content\libcef.dll" />
+        <file src="bin\x86\Release\libEGL.dll" target="content\libEGL.dll" />
+        <file src="bin\x86\Release\libGLESv2.dll" target="content\libGLESv2.dll" />
+        <file src="bin\x86\Release\CefSharp.Core.dll" target="lib\net40-client\CefSharp.Core.dll" />
+        <file src="bin\x86\Release\CefSharp.dll" target="lib\net40-client\CefSharp.dll" />
+        <file src="bin\x86\Release\CefSharp.Wpf.dll" target="lib\net40-client\CefSharp.Wpf.dll" />
+        <file src="bin\x86\Release\Harley.UI.dll" target="lib\net40-client\Harley.UI.dll" />
+    </files>
+</package>
