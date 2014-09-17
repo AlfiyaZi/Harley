@@ -7,20 +7,20 @@
 
     public partial class EmbeddedBrowser
     {
-        private readonly WebView _webView;
+        private readonly ChromiumWebBrowser _browser;
 
         public EmbeddedBrowser()
         {
             InitializeComponent();
 
-            _webView = new WebView();
-            DockPanel.Children.Add(_webView);
+            _browser = new ChromiumWebBrowser();
+            DockPanel.Children.Add(_browser);
         }
 
         public string Address
         {
-            get { return _webView.Address; }
-            set { _webView.Address = value; }
+            get { return _browser.Address; }
+            set { _browser.Address = value; }
         }
 
         public static void Init(IEnumerable<CefCustomScheme> customSchemes = null)
@@ -43,12 +43,7 @@
         {
             if (e.Key == Key.F5)
             {
-                _webView.Reload();
-                return;
-            }
-            if (e.Key == Key.F12)
-            {
-                _webView.ShowDevTools();
+                _browser.Reload();
             }
         }
     }

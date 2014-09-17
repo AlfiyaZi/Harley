@@ -36,17 +36,17 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CefSharp, Version=31.0.0.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=AMD64">
+    <Reference Include="CefSharp, Version=31.0.0.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CefSharp.Common.31.0.0-pre1\CefSharp\x86\CefSharp.dll</HintPath>
+      <HintPath>..\..\libs\CefSharp.Common\CefSharp\x86\CefSharp.dll</HintPath>
     </Reference>
-    <Reference Include="CefSharp.Core, Version=31.0.0.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=AMD64">
+    <Reference Include="CefSharp.Core, Version=31.0.0.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CefSharp.Common.31.0.0-pre1\CefSharp\x86\CefSharp.Core.dll</HintPath>
+      <HintPath>..\..\libs\CefSharp.Common\CefSharp\x86\CefSharp.Core.dll</HintPath>
     </Reference>
-    <Reference Include="CefSharp.Wpf, Version=31.0.0.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=AMD64">
+    <Reference Include="CefSharp.Wpf, Version=31.0.0.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CefSharp.Wpf.31.0.0-pre1\CefSharp\x86\CefSharp.Wpf.dll</HintPath>
+      <HintPath>..\..\libs\CefSharp.Wpf\CefSharp\x86\CefSharp.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
@@ -92,43 +92,44 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\locales\en-US.pak">
+    <None Include="..\..\libs\cef.redist\CEF\locales\en-US.pak">
       <Link>locales\en-US.pak</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Harley.UI.nuspec" />
     <None Include="packages.config" />
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\d3dcompiler_43.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\d3dcompiler_43.dll">
       <Link>d3dcompiler_43.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\d3dcompiler_46.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\d3dcompiler_46.dll">
       <Link>d3dcompiler_46.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\ffmpegsumo.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\ffmpegsumo.dll">
       <Link>ffmpegsumo.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\icudt.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\icudt.dll">
       <Link>icudt.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\libcef.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\libcef.dll">
       <Link>libcef.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\libEGL.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\libEGL.dll">
       <Link>libEGL.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\cef.redist.3.1650.1562-pre3\CEF\x86\libGLESv2.dll">
+    <Content Include="..\..\libs\cef.redist\CEF\x86\libGLESv2.dll">
       <Link>libGLESv2.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\packages\CefSharp.Common.31.0.0-pre1\CefSharp\x86\CefSharp.BrowserSubprocess.exe">
+    <Content Include="..\..\libs\CefSharp.Common\CefSharp\x86\CefSharp.BrowserSubprocess.exe">
       <Link>CefSharp.BrowserSubprocess.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
