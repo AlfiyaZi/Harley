@@ -3,11 +3,13 @@
     using System.Collections.Generic;
     using System.Windows.Input;
     using CefSharp;
+    using CefSharp.Internals;
     using CefSharp.Wpf;
 
     public partial class EmbeddedBrowser
     {
         private readonly ChromiumWebBrowser _browser;
+        private bool _devtoolsVisible;
 
         public EmbeddedBrowser()
         {
@@ -44,6 +46,19 @@
             if (e.Key == Key.F5)
             {
                 _browser.Reload();
+            }
+            if(e.Key == Key.F12)
+            {
+                if(!_devtoolsVisible)
+                {
+                    ((IWebBrowserInternal)_browser).ShowDevTools();
+                    _devtoolsVisible = true;
+                }
+                else
+                {
+                    ((IWebBrowserInternal)_browser).CloseDevTools();
+                    _devtoolsVisible = true;
+                }
             }
         }
     }
