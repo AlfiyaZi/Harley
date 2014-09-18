@@ -10,10 +10,10 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>UI component of Harley</description>
         <frameworkAssemblies>
-            <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework4.0" />
-            <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework4.0" />
-            <frameworkAssembly assemblyName="System.Xaml" targetFramework=".NETFramework4.0" />
-            <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.0" />
+            <frameworkAssembly assemblyName="PresentationCore" targetFramework=".NETFramework4.5" />
+            <frameworkAssembly assemblyName="PresentationFramework" targetFramework=".NETFramework4.5" />
+            <frameworkAssembly assemblyName="System.Xaml" targetFramework=".NETFramework4.5" />
+            <frameworkAssembly assemblyName="WindowsBase" targetFramework=".NETFramework4.5" />
         </frameworkAssemblies>
     </metadata>
     <files>
@@ -26,9 +26,9 @@
         <file src="bin\x86\Release\libcef.dll" target="content\libcef.dll" />
         <file src="bin\x86\Release\libEGL.dll" target="content\libEGL.dll" />
         <file src="bin\x86\Release\libGLESv2.dll" target="content\libGLESv2.dll" />
-        <file src="bin\x86\Release\CefSharp.Core.dll" target="lib\net40-client\CefSharp.Core.dll" />
-        <file src="bin\x86\Release\CefSharp.dll" target="lib\net40-client\CefSharp.dll" />
-        <file src="bin\x86\Release\CefSharp.Wpf.dll" target="lib\net40-client\CefSharp.Wpf.dll" />
-        <file src="bin\x86\Release\Harley.UI.dll" target="lib\net40-client\Harley.UI.dll" />
+        <file src="bin\x86\Release\CefSharp.Core.dll" target="lib\net45\CefSharp.Core.dll" />
+        <file src="bin\x86\Release\CefSharp.dll" target="lib\net45\CefSharp.dll" />
+        <file src="bin\x86\Release\CefSharp.Wpf.dll" target="lib\net45\CefSharp.Wpf.dll" />
+        <file src="bin\x86\Release\Harley.UI.dll" target="lib\net45\Harley.UI.dll" />
     </files>
 </package>
